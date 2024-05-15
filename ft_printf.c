@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mariocos <mariocos@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/15 15:13:03 by mariocos          #+#    #+#             */
+/*   Updated: 2024/05/15 15:27:48 by mariocos         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdio.h>
@@ -21,18 +33,18 @@ int	printer(char c, va_list args)
 	if (c == 'X')
 		len += ft_printhex(va_arg(args, unsigned int), 'A');
 	if (c == 'p')
-		len += ft_putptr(va_arg(args, unsigned long));
+		len += ft_put_ptr(va_arg(args, unsigned long));
 	if (c == 'u')
-		len += ft_printlong(va_arg(args, unsigned int));
+		len += ft_print_long(va_arg(args, unsigned int));
 	return (len);
 }
 
 int	ft_printf(const char *str, ...)
 {
-	int	len;
+	int		len;
 	va_list	args;
-	va_start(args, str);
 
+	va_start(args, str);
 	len = 0;
 	if (!str)
 		return (-1);
