@@ -6,14 +6,14 @@
 /*   By: mariocos <mariocos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 15:13:38 by mariocos          #+#    #+#             */
-/*   Updated: 2024/05/15 15:37:23 by mariocos         ###   ########.fr       */
+/*   Updated: 2024/05/15 15:44:14 by mariocos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdio.h>
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 int	ft_print_long(unsigned int nb)
 {
@@ -34,7 +34,7 @@ int	ft_print_long(unsigned int nb)
 	}
 	len = ft_putstr(str);
 	free (str);
-	return (len);	
+	return (len);
 }
 
 int	ft_put_ptr(unsigned long ptr)
@@ -52,7 +52,7 @@ int	ft_put_ptr(unsigned long ptr)
 	return (len);
 }
 
-void print_ptr(unsigned long ptr, int *len)
+void	print_ptr(unsigned long ptr, int *len)
 {
 	if (ptr >= 16)
 	{

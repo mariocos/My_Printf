@@ -6,14 +6,14 @@
 /*   By: mariocos <mariocos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 15:19:22 by mariocos          #+#    #+#             */
-/*   Updated: 2024/05/15 15:29:07 by mariocos         ###   ########.fr       */
+/*   Updated: 2024/05/15 15:43:04 by mariocos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 char	*empty(void)
 {
@@ -59,4 +59,3 @@ int	un_countsize(unsigned int n, int base)
 	}
 	return (space);
 }
-

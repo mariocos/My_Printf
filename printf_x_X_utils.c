@@ -6,14 +6,14 @@
 /*   By: mariocos <mariocos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 15:13:34 by mariocos          #+#    #+#             */
-/*   Updated: 2024/05/15 15:35:06 by mariocos         ###   ########.fr       */
+/*   Updated: 2024/05/15 15:43:35 by mariocos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 char	*ft_puthexa(unsigned int n, int base)
 {
@@ -46,7 +46,7 @@ int	ft_printhex(unsigned int n, int base)
 
 	len = 0;
 	if (n == 0)
-			len += ft_putchar('0');
+		len += ft_putchar('0');
 	str = ft_puthexa(n, base);
 	len += ft_putstr(str);
 	free (str);

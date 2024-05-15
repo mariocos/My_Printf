@@ -6,14 +6,14 @@
 /*   By: mariocos <mariocos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 15:13:03 by mariocos          #+#    #+#             */
-/*   Updated: 2024/05/15 15:27:48 by mariocos         ###   ########.fr       */
+/*   Updated: 2024/05/15 15:42:48 by mariocos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdio.h>
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 int	printer(char c, va_list args)
 {
