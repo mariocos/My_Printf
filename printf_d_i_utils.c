@@ -6,14 +6,14 @@
 /*   By: mariocos <mariocos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 15:13:27 by mariocos          #+#    #+#             */
-/*   Updated: 2024/05/15 15:41:55 by mariocos         ###   ########.fr       */
+/*   Updated: 2024/05/15 16:15:54 by mariocos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 int	countsize(int n, int base)
 {
